@@ -1,0 +1,70 @@
+<head>
+  <style>
+    body {
+      text-align: center;
+    }
+    ul {
+      text-align: left;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- JS imported -->
+  <script src="final_playground.js"></script>
+
+  <p>Vanya's Playground!</p>
+
+  <!-- counter -->
+  <p id="counter-title">Counter</p>
+  <button id="button1" onclick="increment();">+1</button>
+  <button id="clear-counter" onclick="clearCounter();">clear</button>
+
+  <!-- Buttons to alert and play sound -->
+  <button onclick="alertCount('The count is: ');">Alert</button>
+  <button id="button2" onclick="alertCount('The count is: ');">Beep</button>
+  <audio id="audio" src="../static/beep-07a.wav"></audio>
+
+  <!-- Form to type in the name -->
+  <form id="form">
+    <input
+      id="search"
+      autocomplete="off"
+      autofocus
+      placeholder="food"
+      type="text"
+    />
+    <input type="submit" />
+  </form>
+
+  <!-- Buttons to change the color of H1 -->
+  <p id="counter-title">Colors</p>
+
+  <button class="changeColor" data-color="red">Red</button>
+  <button class="changeColor" data-color="blue">Blue</button>
+  <button class="changeColor" data-color="green">Green</button>
+
+  <!-- Drop down color list -->
+  <select id="color-change-dd">
+    <option value="black">Black</option>
+    <option value="red">Red</option>
+    <option value="blue">Blue</option>
+    <option value="green">Green</option>
+  </select>
+
+  <!-- checklist -->
+  <p>Tasks</p>
+  <ul id="tasks"></ul>
+  <form id="new-task">
+    <input
+      id="task"
+      autocomplete="off"
+      autofocus
+      placeholder="New Task"
+      type="text"
+    />
+    <input id="submit" type="submit" />
+  </form>
+
+  <h2 id="counter">0</h2>
+</body>
